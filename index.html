@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopMate - Test E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Jabburr Ads Tracking Code -->
+    <script>
+      !function (w, d, elem, u) {
+        if (w.tbo) return;
+        let t = d.createElement(elem);
+        t.async = !0;
+        t.src = u;
+        let s = d.getElementsByTagName(elem)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+      'https://dev-api.jabburr.com/plugins/saf/tracking/conversion.js')
+    </script>
+  </head>
+  <body>
+    <!-- Jabburr Event Code -->
+=    <!-- <button onclick="saf('track', 'YToxOntpOjA7czoyOiI4OSI7fQ==')">Trigger saf()</button> -->
+    <script>
+      window.onload = function() {
+        saf('track', 'YToxOntpOjA7czoyOiI4OSI7fQ==');
+      };
+    </script>
+    <header>
+      <h1>:shopping_bags: ShopMate</h1>
+      <p>Your test e-commerce app for ad conversion</p>
+    </header>
+    <main>
+      <section class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Sample Product">
+        <h2>Wireless Headphones</h2>
+        <p class="price">$59.99</p>
+        <button onclick="buyProduct()">Buy Now</button>
+      </section>
+    </main>
+    <footer>
+      <p>Test app for Jabburr ad conversion tracking</p>
+    </footer>
+    <script>
+      function buyProduct() {
+        window.location.href = "thank-you.html" + window.location.search;
+      }
+    </script>
+  </body>
+</html>
